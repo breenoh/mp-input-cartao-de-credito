@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    background-color: #1F2937;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 0 10px;
+    border-radius: 20px;
+    background: #F3F4F6;
+}
+
+/* ÁREA DO CARTÃO FRENTE */
+
+.card-container-frente {
+    display: flex;
+    width: 280px;
+    height: 176px;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #030712 41.43%, #595959 108.21%);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.50);
+    margin: 80px 39px 25px 39px;
+
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.card-number {
+    color: #F9FAFB;
+    border: 1px solid #507FFA;
+    margin: 36px auto 31px auto;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+
+.card-number p {
+    text-align: center;
+    color: #F9FAFB;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-footer {
+    color: #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+
+}
+
+.cardholder-text {
+    color: #DCDCDC;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cardholder-text .p {
+    color: #F9FAFB;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.expiress-text {
+    color: #DCDCDC;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.expiress-text p {
+    color: #F9FAFB;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* PARTE DE TRAS DO CARTÃO! */
+
+.card-container-tras {
+    display: none;
+    width: 280px;
+    height: 176px;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #030712 41.43%, #595959 108.21%);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.50);
+    margin: 80px 39px 0px 39px;
+    flex-direction: column;
+}
+
+.target {
+    margin-top: 37px;
+    height: 40px;
+    background-color: #A9A9A9;
+    color: #A9A9A9;
+}
+
+.card-cvv {
+    display: flex;
+    justify-content: end;
+    margin: 23px 23px 7px 0px;
+}
+
+.card-cvv p {
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 2px solid #507FFA;
+    padding: 6px 16px;
+    border-radius: 6px;
+}
+
+.title-tras {
+    padding: 0px 0px 9px 13px;
+}
+
+/* FIM DA PARTE DE TRAS DO CARTAO */
+
+/* FORMULARIO */
+
+.form-container {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+
+    flex-direction: column;
+}
+
+h2 {
+    width: 239px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #101010;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+label {
+    display: block;
+    color: #101010;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 3px;
+
+}
+
+input {
+    width: 241px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #D3D3D3;
+
+}
+
+.validade-flex {
+    display: flex;
+    gap: 5px;
+}
+
+.validade-flex input {
+    width: 115px;
+
+}
+
+.validade-flex input::placeholder {
+    padding-left: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}
