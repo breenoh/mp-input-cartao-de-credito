@@ -29,15 +29,15 @@
 
 /* ÁREA DO CARTÃO FRENTE */
 
+
 .card-container-frente {
-    display: flex;
+
     width: 280px;
     height: 176px;
     border-radius: 15px;
     background: linear-gradient(270deg, #030712 41.43%, #595959 108.21%);
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.50);
-    margin: 80px 39px 25px 39px;
-
+    margin: 80px 39px 0px 39px;
     flex-direction: column;
 }
 
@@ -53,8 +53,9 @@
     color: #F9FAFB;
     border: 1px solid #507FFA;
     margin: 36px auto 31px auto;
-    padding: 6px 10px;
+    padding: 10px 10px;
     border-radius: 8px;
+    width: 230px;
 }
 
 
@@ -160,12 +161,18 @@
 /* FORMULARIO */
 
 .form-container {
-    margin: 60px;
+    margin: 20px 60px;
     display: flex;
     justify-content: center;
-    align-items: left;
-
+    align-items: center;
     flex-direction: column;
+}
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 h2 {
@@ -188,9 +195,11 @@ label {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-top: 10px;
     padding-bottom: 3px;
+}
 
+.CVV {
+    padding-top: 15px;
 }
 
 input {
@@ -205,17 +214,40 @@ input {
 .validade-flex {
     display: flex;
     gap: 5px;
+    
 }
 
 .validade-flex input {
     width: 115px;
-
 }
 
+
 .validade-flex input::placeholder {
-    padding-left: 5px;
+    padding-left: 10px;
+
 }
 
 input[type=number]::-webkit-inner-spin-button{
     appearance: none; 
+}
+
+.btn {
+    margin-top: 10px;
+    color: #101010;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 3px;
+    transition: all .1s;
+}
+
+.btn:hover {
+    background-color: #1F2937;
+    color: white;
+}
+
+.flip {
+    transform: rotateY(-180deg);
 }

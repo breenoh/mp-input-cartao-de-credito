@@ -20,17 +20,17 @@
                 </p>
 
                 <div class="card-number">
-                    <p>XXXX-XXXX-XXXX-XXXX</p>
+                    <p id="camp-card-number">XXXX-XXXX-XXXX-XXXX</p>
                 </div>
 
                 <div class="card-footer">
                     <div class="cardholder">
                         <p class="cardholder-text">Cardholder</p>
-                        <p>XXXX XXXX</p>
+                        <p id="cardholder">XXXX XXXX</p>
                     </div>
                     <div class="expiress">
                         <p class="expiress-text">Expiress</p>
-                        <p>XX/XX</p>
+                        <p><span class="span-data-mm">XX</span>/<span class="span-data-yy">XX</span></p>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="card-cvv">
-                        <p>489</p>
+                    <p id="cvv">XXX</p>
                 </div>
                 <div class="title-tras">
                     <img src="src/assets/Vector 34 (Stroke).png" alt="">
@@ -54,17 +54,19 @@
 
             <div class="form-container">
                 <h2>Digite os dados do seu cartão</h2>
-                <form action="">
-                    <label for="">Número do cartão</label>
-                    <input id="" type="number"><br>
-                    <label for="">Nome impresso no cartão</label>
-                    <input type="text"><br>
-                    <label for="">Validade</label>
-                    <div class="validade-flex">
-                        <input type="number" placeholder="mm"><input type="number" placeholder="yy">
+                <form class="form-center" action="">
+                    <label for="num-cartao">Número do cartão</label>
+                    <input id="num-cartao" type="number"><br>
+                    <label for="nome-cartao">Nome impresso no cartão</label>
+                    <input id="nome-cartao" type="text" required="required"><br>
+                    <label for="validade">Validade</label>
+                    <div id="validade" class="validade-flex">
+                        <input id="data-mm" type="number" placeholder="mm"><input id="data-yy" type="number" placeholder="yy">
                     </div>
-                    <label for="">Código de verificação</label>
-                    <input type="number">
+                    <label class="CVV" for="codigo-cvv">Código de verificação</label>
+                    <input id="codigo-cvv" type="number">
+
+                    <input class="btn" type="submit" value="Adicionar cartão">
                 </form>
             </div>
         </div>
